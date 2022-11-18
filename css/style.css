@@ -2,6 +2,10 @@
 GENERAL STYLES */
 
 /* * ROOT */
+:root{
+    /* ? COLORS */
+    --main-bg-color:#0d6efd;
+}
 
 
 
@@ -12,10 +16,27 @@ body{
 
 
 
+/* * CLASSES */
+.my-btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+
+
 
 
 /* *---------------------------------------------------------------
 SPECIFIC STYLES */
+main{
+    height: 100vh;
+    background-color: var(--main-bg-color);
+}
+
+main>*{
+    background-color: white;
+}
+
 main form input{
     cursor: not-allowed;
 }
