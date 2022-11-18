@@ -38,11 +38,11 @@ else{
     alert('Ok Iniziamo')
 
     name = prompt("Dimmi il tuo nome",'');
-    momentanealCase.innerHTML = name;
+    nameInputArea.value = name;
 
-    surname = prompt("Dimmi il tuo nome",'');
-    momentanealCase.innerHTML = surname;
+    surname = prompt("Dimmi il tuo cognome",'');
+    surnameInputArea.value = surname;
 
-    favouriteColor = prompt("Dimmi il tuo nome",'');
-    momentanealCase.innerHTML = favouriteColor;
+    favouriteColor = prompt("Dimmi il tuo colore preferito",'');
+    favouriteColorInputArea.value = favouriteColor;
 }
