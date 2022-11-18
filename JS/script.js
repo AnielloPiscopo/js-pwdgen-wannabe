@@ -7,7 +7,9 @@ INIZIALIZZAZIONE E DICHIARAZIONE DI VARIABILI E COSTANTI */
 const nameInputArea = document.getElementById('name');
 const surnameInputArea = document.getElementById('surname');
 const favouriteColorInputArea = document.getElementById('favourite-color');
-const momentanealCase=document.getElementById('momentaneal-case')
+const passwordArea = document.getElementById('password');
+const momentanealCase=document.getElementById('momentaneal-case');
+const passworCreationBtn = document.getElementById('password-creation-btn');
 
 
 
@@ -26,6 +28,8 @@ let okValue;
 
 /* ----------------------------------------------------------------
 MAIN CODE */
+
+// * LINEAR PROGRAMM
 alert('Benvenuto!');
 alert('Per andare avanti dovrai inserire alcuni dati(il nome , il cognome e il colore preferito) che verrano poi successivamente inseriri nella pagina web che vedi');
 
@@ -45,4 +49,12 @@ else{
 
     favouriteColor = prompt("Dimmi il tuo colore preferito",'');
     favouriteColorInputArea.value = favouriteColor;
+}
+
+
+
+// * EVENTS
+passworCreationBtn.onclick = () => {
+    event.preventDefault();
+    passwordArea.innerHTML = `La tua password è ${name+surname+favouriteColor}`
 }

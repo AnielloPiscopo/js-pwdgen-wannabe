@@ -17,17 +17,23 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
+        <!-- ? INTERNAL LINKS -->
+        <link rel="stylesheet" href="css/style.css">
+
+
 
         <!-- * JS SCRIPTS -->
         
         <!-- ? EXTERNAL SCRIPTS -->
+
+        <!-- * Boostrap -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
         
         <!-- ? PERSONAL SCRIPTS -->
-        <script src="JS/script.js" defer></script>
+        <script type="text/javascript" src="JS/script.js" defer></script>
     </head>
 
 
@@ -36,14 +42,29 @@
 
     <body>
         <!-- * MAIN -->
-        <main>
-            <h1 class="font-weight-bold">Dati personali</h1>
+        <main class="px-3">
+            <h1 class="font-weight-bold">Password Generator</h1>
 
             <form>
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="text" name="surname" id="surname" placeholder="Surname">
-                <input type="text" name="favourite-color" id="favourite-color" placeholder="Favourite Color">
-              </form>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nome" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label for="surname">Cognome</label>
+                    <input type="text" class="form-control" id="surname" placeholder="Cognome" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label for="favourite-color">Colore preferito</label>
+                    <input type="text" class="form-control" id="favourite-color" placeholder="Colore preferito" disabled>
+                </div>
+
+                <button type="submit" class="btn" id="password-creation-btn">Crea la tua password</button>
+            </form>
+
+            <span id="password"></span>
         </main>
     </body>
 </html>
