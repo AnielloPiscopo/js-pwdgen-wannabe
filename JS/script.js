@@ -56,5 +56,5 @@ else{
 // * EVENTS
 passworCreationBtn.onclick = () => {
     event.preventDefault();
-    passwordArea.innerHTML = `La tua password è ${name+surname+favouriteColor}`
+    passwordArea.innerHTML = `La tua password è ${name+surname+favouriteColor}22`;
 }
