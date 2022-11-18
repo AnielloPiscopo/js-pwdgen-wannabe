@@ -7,11 +7,17 @@ INIZIALIZZAZIONE E DICHIARAZIONE DI VARIABILI E COSTANTI */
 const nameInputArea = document.getElementById('name');
 const surnameInputArea = document.getElementById('surname');
 const favouriteColorInputArea = document.getElementById('favourite-color');
+const momentanealCase=document.getElementById('momentaneal-case')
 
 
 
 // * DICHIARAZIONE 
-// ? 
+
+// ? DICHIARAZIONE DELLE VARIABILI
+let name;
+let surname;
+let favouriteColor;
+let okValue;
 
 
 
@@ -21,7 +27,22 @@ const favouriteColorInputArea = document.getElementById('favourite-color');
 /* ----------------------------------------------------------------
 MAIN CODE */
 alert('Benvenuto!');
-alert('Per andare avanti dovrai inserire alcuni dati che sono: il nome , il cognome e il colore preferito');
+alert('Per andare avanti dovrai inserire alcuni dati(il nome , il cognome e il colore preferito) che verrano poi successivamente inseriri nella pagina web che vedi');
 
+okValue = confirm('Hai capito?','');
 
-const name = prompt('Q')
+if(!okValue){
+    alert('Refresha la pagina e rileggi le condizioni');
+}
+else{
+    alert('Ok Iniziamo')
+
+    name = prompt("Dimmi il tuo nome",'');
+    momentanealCase.innerHTML = name;
+
+    surname = prompt("Dimmi il tuo nome",'');
+    momentanealCase.innerHTML = surname;
+
+    favouriteColor = prompt("Dimmi il tuo nome",'');
+    momentanealCase.innerHTML = favouriteColor;
+}
